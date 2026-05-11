@@ -144,7 +144,7 @@ export default function Hero() {
             letterSpacing: '0.01em',
           }}
         >
-          Handcrafted dough, imported Italian ingredients,<br className="hidden sm:block" /> fired in our stone oven — served with warmth<br className="hidden sm:block" /> at the heart of Mascot.
+          Handcrafted dough, fresh quality ingredients,<br className="hidden sm:block" /> fired in our stone oven — served with warmth<br className="hidden sm:block" /> at the heart of Mascot.
         </motion.p>
 
         {/* CTA buttons */}

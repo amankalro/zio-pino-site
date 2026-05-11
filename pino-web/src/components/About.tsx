@@ -188,7 +188,7 @@ export default function About() {
               >
                 Every pizza that leaves our stone oven carries the same care Pino
                 brought from his nonna's kitchen in Naples — slow-fermented dough,
-                San Marzano tomatoes, and imported mozzarella. Nothing less.
+                San Marzano tomatoes, and fresh mozzarella. Nothing less.
               </p>
               <p
                 className="font-light leading-relaxed"

@@ -121,7 +121,7 @@ export default function FeaturedDishes() {
               lineHeight: 1.75,
             }}
           >
-            Every dish begins with the finest ingredients — imported from Italy,
+            Every dish begins with the finest fresh ingredients,
             prepared with decades of craft, and served with genuine warmth.
           </p>
         </motion.div>
@@ -162,7 +162,7 @@ export default function FeaturedDishes() {
                   color: '#d4a843',
                 }}
               >
-                Imported Ingredients
+                Fresh Ingredients
               </span>
             </div>
           </motion.div>
