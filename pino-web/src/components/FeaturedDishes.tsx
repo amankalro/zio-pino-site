@@ -4,26 +4,26 @@ import { ArrowRight } from 'lucide-react';
 
 const dishes = [
   {
-    name: 'Margherita Classica',
+    name: 'Margherita Pizza',
     category: 'Pizza',
     description:
-      'San Marzano tomato, fior di latte mozzarella, fresh basil, extra virgin olive oil. Our signature since day one.',
+      'Tomato, cheese and oregano on our signature stone-baked base. Simple, honest, and perfect every time.',
     tag: 'Our Signature',
     tagColor: '#d4a843',
   },
   {
-    name: 'Tagliatelle al Ragù',
+    name: 'Spaghetti Marinara',
     category: 'Pasta',
     description:
-      'Slow-braised beef ragù with hand-rolled egg pasta, Parmigiano Reggiano, and fresh herbs.',
+      'A generous combination of fresh seafood cooked in a rich Napoletana sauce. A Zio Pino classic.',
     tag: 'Chef\'s Choice',
     tagColor: '#c2410c',
   },
   {
-    name: 'Pane all\'Aglio',
-    category: 'Antipasto',
+    name: 'Garlic Bread',
+    category: 'Breads',
     description:
-      'Stone-baked sourdough, whipped garlic butter, sea salt, rosemary. A perfect start to any meal.',
+      'A serving of four golden pieces — crisp on the outside, soft within. The perfect way to start any meal.',
     tag: 'Most Loved',
     tagColor: '#5a6b3a',
   },
