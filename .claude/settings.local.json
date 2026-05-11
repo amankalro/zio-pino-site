@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/djangoveda/pino_site/pino-web/public/assets && cp /Users/djangoveda/pino_site/pino_photos/*.jpg /Users/djangoveda/pino_site/pino-web/public/assets/ && ls /Users/djangoveda/pino_site/pino-web/public/assets/)"
+    ],
+    "additionalDirectories": [
+      "/Users/djangoveda/pino_site/pino_photos"
+    ]
+  }
+}
