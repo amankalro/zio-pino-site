@@ -4,10 +4,10 @@ import { Menu, X, ExternalLink } from 'lucide-react';
 
 const navLinks = [
   { label: 'Menu', href: '#menu' },
+  { label: 'Groups', href: '#group-menu' },
   { label: 'Our Story', href: '#story' },
   { label: 'Atmosphere', href: '#atmosphere' },
   { label: 'Reviews', href: '#reviews' },
-  { label: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
