@@ -67,9 +67,9 @@ export default function About() {
             >
               <motion.div className="absolute inset-0 scale-110" style={{ y: imgY }}>
                 <img
-                  src="/assets/atmosphere.jpg"
+                  src="/assets/real-interior.jpg"
                   alt="Zio Pino restaurant interior"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                   loading="lazy"
                 />
               </motion.div>

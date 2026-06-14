@@ -16,7 +16,7 @@ const dishes = [
     category: 'Pasta',
     description:
       'A generous combination of fresh seafood cooked in a rich Napoletana sauce. A Zio Pino classic.',
-    tag: 'Chef\'s Choice',
+    tag: "Chef's Choice",
     tagColor: '#c2410c',
   },
   {
@@ -126,146 +126,212 @@ export default function FeaturedDishes() {
           </p>
         </motion.div>
 
-        {/* Hero image + cards layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-start">
-          {/* Large editorial image — spans 3 cols */}
+        {/* Top row: real food spread + lasagna image card */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 mb-6 lg:mb-8">
+
+          {/* Large real-restaurant food spread — 3 cols */}
           <motion.div
             initial={{ opacity: 0, scale: 1.04 }}
             animate={headingInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-            className="lg:col-span-3 relative group overflow-hidden rounded-sm"
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+            className="lg:col-span-3 relative group overflow-hidden"
             style={{ aspectRatio: '4/3' }}
           >
             <img
-              src="/assets/spread.jpg"
-              alt="Italian food spread at Zio Pino"
-              className="w-full h-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-105"
+              src="/assets/real-spread.jpg"
+              alt="Food spread at Zio Pino Pizza"
+              className="w-full h-full object-cover object-top transition-transform duration-[1.4s] ease-out group-hover:scale-105"
               loading="lazy"
             />
-            {/* Overlay */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'linear-gradient(135deg, rgba(13,12,11,0.55) 0%, transparent 50%, rgba(13,12,11,0.35) 100%)',
+                  'linear-gradient(to top, rgba(13,12,11,0.7) 0%, transparent 45%, rgba(13,12,11,0.15) 100%)',
               }}
             />
-            {/* Corner label */}
-            <div className="absolute bottom-6 left-6">
+            <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+              <p
+                className="font-light italic leading-snug max-w-xs"
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: '1.15rem',
+                  color: 'rgba(249,241,228,0.9)',
+                  fontStyle: 'italic',
+                }}
+              >
+                "Everything on the table, made fresh tonight."
+              </p>
               <span
-                className="text-xs tracking-[0.24em] uppercase font-medium px-4 py-2"
+                className="text-xs tracking-[0.22em] uppercase font-medium px-3 py-1.5 shrink-0 ml-4"
                 style={{
                   fontFamily: "'Inter', sans-serif",
-                  background: 'rgba(13,12,11,0.78)',
+                  background: 'rgba(13,12,11,0.75)',
                   backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(212,168,67,0.25)',
+                  border: '1px solid rgba(212,168,67,0.3)',
                   color: '#d4a843',
                 }}
               >
-                Fresh Ingredients
+                Dine In
               </span>
             </div>
           </motion.div>
 
-          {/* Dish cards — stack in 2 cols */}
+          {/* Lasagna image card — 2 cols */}
           <motion.div
-            ref={cardsRef}
-            className="lg:col-span-2 flex flex-col gap-5"
-            variants={containerVariants}
-            initial="hidden"
-            animate={cardsInView ? 'visible' : 'hidden'}
+            initial={{ opacity: 0, scale: 1.04 }}
+            animate={headingInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.28 }}
+            className="lg:col-span-2 relative group overflow-hidden"
+            style={{ aspectRatio: '3/4' }}
           >
-            {dishes.map((dish) => (
-              <motion.div
-                key={dish.name}
-                variants={cardVariants}
-                className="group relative p-6 cursor-pointer overflow-hidden"
+            <img
+              src="/assets/lasagna.jpg"
+              alt="Lasagna at Zio Pino"
+              className="w-full h-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-105"
+              loading="lazy"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'linear-gradient(to top, rgba(13,12,11,0.85) 0%, rgba(13,12,11,0.1) 55%, transparent 100%)',
+              }}
+            />
+            <div className="absolute bottom-6 left-6">
+              <span
+                className="block text-xs tracking-[0.22em] uppercase font-medium mb-1"
+                style={{ fontFamily: "'Inter', sans-serif", color: '#d4a843' }}
+              >
+                Pasta
+              </span>
+              <h3
+                className="font-bold leading-tight"
                 style={{
-                  background: 'rgba(28,26,23,0.8)',
-                  border: '1px solid rgba(249,241,228,0.08)',
-                  transition: 'border-color 0.3s ease, background 0.3s ease',
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212,168,67,0.3)';
-                  (e.currentTarget as HTMLElement).style.background = 'rgba(39,36,31,0.95)';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(249,241,228,0.08)';
-                  (e.currentTarget as HTMLElement).style.background = 'rgba(28,26,23,0.8)';
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: '1.5rem',
+                  color: '#f9f1e4',
                 }}
               >
-                {/* Warm hover glow */}
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                  style={{
-                    background:
-                      'radial-gradient(ellipse at 0% 100%, rgba(212,168,67,0.08) 0%, transparent 70%)',
-                  }}
-                />
-
-                <div className="flex items-start justify-between mb-3">
-                  <div>
-                    <span
-                      className="text-xs tracking-[0.22em] uppercase font-medium mb-1 block"
-                      style={{
-                        fontFamily: "'Inter', sans-serif",
-                        color: 'rgba(249,241,228,0.4)',
-                      }}
-                    >
-                      {dish.category}
-                    </span>
-                    <h3
-                      className="font-semibold leading-tight"
-                      style={{
-                        fontFamily: "'Playfair Display', serif",
-                        fontSize: '1.3rem',
-                        color: '#f9f1e4',
-                        letterSpacing: '0.01em',
-                      }}
-                    >
-                      {dish.name}
-                    </h3>
-                  </div>
-                  <span
-                    className="text-xs px-2.5 py-1 tracking-wide shrink-0 ml-3"
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      background: `${dish.tagColor}18`,
-                      border: `1px solid ${dish.tagColor}40`,
-                      color: dish.tagColor,
-                      fontSize: '0.7rem',
-                      letterSpacing: '0.08em',
-                    }}
-                  >
-                    {dish.tag}
-                  </span>
-                </div>
-
-                <p
-                  className="font-light leading-relaxed mb-4 text-sm"
-                  style={{
-                    fontFamily: "'Inter', sans-serif",
-                    color: 'rgba(249,241,228,0.56)',
-                    fontSize: '0.875rem',
-                    lineHeight: 1.7,
-                  }}
-                >
-                  {dish.description}
-                </p>
-
-                <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-0 group-hover:translate-x-1">
-                  <span
-                    className="text-xs tracking-widest uppercase"
-                    style={{ fontFamily: "'Inter', sans-serif", color: '#d4a843', letterSpacing: '0.16em' }}
-                  >
-                    See Menu
-                  </span>
-                  <ArrowRight size={13} style={{ color: '#d4a843' }} />
-                </div>
-              </motion.div>
-            ))}
+                Lasagna
+              </h3>
+              <p
+                className="mt-1 text-sm font-light"
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  color: 'rgba(249,241,228,0.65)',
+                  fontSize: '0.82rem',
+                }}
+              >
+                Napoletana sauce, mozzarella & béchamel
+              </p>
+            </div>
           </motion.div>
         </div>
+
+        {/* Bottom row: 3 text dish cards */}
+        <motion.div
+          ref={cardsRef}
+          className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate={cardsInView ? 'visible' : 'hidden'}
+        >
+          {dishes.map((dish) => (
+            <motion.div
+              key={dish.name}
+              variants={cardVariants}
+              className="group relative p-6 cursor-pointer overflow-hidden"
+              style={{
+                background: 'rgba(28,26,23,0.8)',
+                border: '1px solid rgba(249,241,228,0.08)',
+                transition: 'border-color 0.3s ease, background 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212,168,67,0.3)';
+                (e.currentTarget as HTMLElement).style.background = 'rgba(39,36,31,0.95)';
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(249,241,228,0.08)';
+                (e.currentTarget as HTMLElement).style.background = 'rgba(28,26,23,0.8)';
+              }}
+            >
+              {/* Warm hover glow */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                style={{
+                  background:
+                    'radial-gradient(ellipse at 0% 100%, rgba(212,168,67,0.08) 0%, transparent 70%)',
+                }}
+              />
+
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <span
+                    className="text-xs tracking-[0.22em] uppercase font-medium mb-1 block"
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      color: 'rgba(249,241,228,0.4)',
+                    }}
+                  >
+                    {dish.category}
+                  </span>
+                  <h3
+                    className="font-semibold leading-tight"
+                    style={{
+                      fontFamily: "'Playfair Display', serif",
+                      fontSize: '1.25rem',
+                      color: '#f9f1e4',
+                      letterSpacing: '0.01em',
+                    }}
+                  >
+                    {dish.name}
+                  </h3>
+                </div>
+                <span
+                  className="text-xs px-2.5 py-1 tracking-wide shrink-0 ml-3"
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    background: `${dish.tagColor}18`,
+                    border: `1px solid ${dish.tagColor}40`,
+                    color: dish.tagColor,
+                    fontSize: '0.7rem',
+                    letterSpacing: '0.08em',
+                  }}
+                >
+                  {dish.tag}
+                </span>
+              </div>
+
+              <p
+                className="font-light leading-relaxed mb-4"
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  color: 'rgba(249,241,228,0.56)',
+                  fontSize: '0.875rem',
+                  lineHeight: 1.7,
+                }}
+              >
+                {dish.description}
+              </p>
+
+              <a
+                href="https://ziopinopizza.ktu.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1"
+              >
+                <span
+                  className="text-xs tracking-widest uppercase"
+                  style={{ fontFamily: "'Inter', sans-serif", color: '#d4a843', letterSpacing: '0.16em' }}
+                >
+                  Order Now
+                </span>
+                <ArrowRight size={13} style={{ color: '#d4a843' }} />
+              </a>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
