@@ -101,12 +101,12 @@ export default function Hero() {
           className="flex items-center gap-3 mb-6"
         >
           <span
-            className="text-xs tracking-[0.28em] uppercase font-medium"
-            style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
+            className="text-xs tracking-[0.28em] uppercase font-semibold"
+            style={{ color: 'rgba(249,241,228,0.95)', fontFamily: "'Inter', sans-serif" }}
           >
             Since 1982 · Mascot, Sydney
           </span>
-          <div className="h-px w-16 opacity-50" style={{ background: '#be2f35' }} />
+          <div className="h-px w-16 opacity-70" style={{ background: '#be2f35' }} />
         </motion.div>
 
         {/* Main headline */}
@@ -157,7 +157,7 @@ export default function Hero() {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-wrap items-center gap-4 mb-12"
+          className="flex flex-wrap items-center gap-4 mb-0 sm:mb-12"
         >
           <a
             href="https://ziopinopizza.ktu.com.au/"
@@ -182,7 +182,7 @@ export default function Hero() {
             href="/assets/zio-pino-menu.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
+            className="hidden sm:inline-block px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
@@ -206,7 +206,7 @@ export default function Hero() {
             href="/assets/dine-in-menu.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
+            className="hidden sm:inline-block px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
@@ -233,7 +233,7 @@ export default function Hero() {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-wrap items-center gap-x-6 gap-y-3"
+          className="hidden sm:flex flex-wrap items-center gap-x-6 gap-y-3"
         >
           {trustItems.map(({ icon: Icon, label }) => (
             <div key={label} className="flex items-center gap-2">
