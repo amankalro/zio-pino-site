@@ -41,7 +41,7 @@ export default function Navbar() {
             <img
               src="/assets/logo-light.svg"
               alt="Zio Pino Italian Pizzeria"
-              className="h-14 w-auto"
+              className="h-16 w-auto"
             />
           </a>
 

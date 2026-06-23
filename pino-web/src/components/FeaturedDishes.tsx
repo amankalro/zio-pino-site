@@ -138,7 +138,7 @@ export default function FeaturedDishes() {
             style={{ aspectRatio: '4/3' }}
           >
             <img
-              src="/assets/real-spread.jpg"
+              src="/assets/menu_1.jpg"
               alt="Food spread at Zio Pino Pizza"
               className="w-full h-full object-cover object-top transition-transform duration-[1.4s] ease-out group-hover:scale-105"
               loading="lazy"

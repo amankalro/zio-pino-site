@@ -45,13 +45,16 @@ export default function Hero() {
         animate={{ scale: 1 }}
         transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
       >
-        <img
-          src="/assets/hero.jpg"
-          alt="Wood-fired pizza at Zio Pino"
-          className="w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
-        />
+        <picture className="block w-full h-full">
+          <source media="(max-width: 767px)" srcSet="/assets/mobile-hero.jpg" />
+          <img
+            src="/assets/hero.jpg"
+            alt="Wood-fired pizza at Zio Pino"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </picture>
       </motion.div>
 
       {/* Cinematic overlays — layered for depth */}
