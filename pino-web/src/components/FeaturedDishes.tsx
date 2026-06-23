@@ -122,7 +122,7 @@ export default function FeaturedDishes() {
             }}
           >
             Every dish begins with the finest fresh ingredients,
-            prepared with decades of craft, and served with genuine warmth.
+            perfected over four decades, and served with the warmth of family.
           </p>
         </motion.div>
 

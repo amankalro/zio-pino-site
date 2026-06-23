@@ -94,7 +94,7 @@ export default function CTA() {
           Ready for Real
           <br />
           <em style={{ color: '#d4a843', fontStyle: 'italic' }}>
-            Italian Pizza?
+            Italian Food?
           </em>
         </motion.h2>
 

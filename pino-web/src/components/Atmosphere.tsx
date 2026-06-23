@@ -136,8 +136,8 @@ export default function Atmosphere() {
                 fontStyle: 'italic',
               }}
             >
-              "The kind of place where you come for pizza<br />
-              and stay for the feeling."
+              "The kind of place where you come for the food<br />
+              and stay for the family."
             </p>
             <footer
               className="mt-3 text-xs tracking-widest uppercase"
