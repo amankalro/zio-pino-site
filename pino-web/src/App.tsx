@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeaturedDishes from './components/FeaturedDishes';
+import MenuLinks from './components/MenuLinks';
 import GroupMenu from './components/GroupMenu';
 import About from './components/About';
 import Atmosphere from './components/Atmosphere';
@@ -16,6 +17,7 @@ export default function App() {
       <main>
         <Hero />
         <FeaturedDishes />
+        <MenuLinks />
         <GroupMenu />
         <About />
         <Atmosphere />
