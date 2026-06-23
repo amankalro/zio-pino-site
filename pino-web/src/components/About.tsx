@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 
 const stats = [
-  { value: '20+', label: 'Years in Mascot' },
+  { value: '40+', label: 'Years Serving' },
   { value: '100%', label: 'Stone-fired Oven' },
   { value: 'Family', label: 'Run & Owned' },
 ];
@@ -173,9 +173,12 @@ export default function About() {
                   lineHeight: 1.8,
                 }}
               >
-                Zio Pino opened its doors in Mascot over two decades ago with a simple
-                belief — that truly great pizza starts with honesty. Honest flour,
-                honest tomatoes, honest fire.
+                For over four decades, Zio Pino has been a local favourite, bringing
+                people together through authentic Italian food, generous hospitality
+                and a welcoming family atmosphere. Since opening our doors in 1982,
+                Pino has become a familiar face to generations of customers who have
+                grown up sharing meals, celebrations and special moments around our
+                tables.
               </p>
               <p
                 className="font-light leading-relaxed"
@@ -186,9 +189,11 @@ export default function About() {
                   lineHeight: 1.8,
                 }}
               >
-                Every pizza that leaves our stone oven carries the same care Pino
-                brought from his nonna's kitchen in Naples — slow-fermented dough,
-                San Marzano tomatoes, and fresh mozzarella. Nothing less.
+                What started as a passion for good food and good company continues
+                today with the same values at heart — generous servings, traditional
+                Italian flavours and treating every guest like family. Whether it's
+                your first visit or your fiftieth, we look forward to welcoming you to
+                the Zio Pino family.
               </p>
               <p
                 className="font-light leading-relaxed"
@@ -199,8 +204,21 @@ export default function About() {
                   lineHeight: 1.8,
                 }}
               >
-                We've become a part of this community — a neighbourhood institution —
-                and that responsibility shapes every dish we serve.
+                Over 40 years later, the recipes are still authentic, the portions are
+                still generous, and Pino is still greeting customers with the same
+                smile that made Zio Pino a beloved part of the community.
+              </p>
+              <p
+                className="leading-relaxed"
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: '1.5rem',
+                  fontStyle: 'italic',
+                  color: '#d4a843',
+                  lineHeight: 1.6,
+                }}
+              >
+                Grazie for being part of our story.
               </p>
             </motion.div>
 
