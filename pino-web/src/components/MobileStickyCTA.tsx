@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, MapPin, ShoppingBag, CalendarDays } from 'lucide-react';
+import { Phone, CalendarDays, UtensilsCrossed } from 'lucide-react';
 
 const actions = [
   {
@@ -9,21 +9,15 @@ const actions = [
     primary: false,
   },
   {
-    label: 'Book',
+    label: 'Book a Table',
     icon: CalendarDays,
     href: 'https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg==',
-    primary: false,
-  },
-  {
-    label: 'Order',
-    icon: ShoppingBag,
-    href: 'https://ziopinopizza.ktu.com.au/',
     primary: true,
   },
   {
-    label: 'Directions',
-    icon: MapPin,
-    href: 'https://maps.google.com/?q=930+Botany+Rd+Mascot+NSW+2020',
+    label: 'Menu',
+    icon: UtensilsCrossed,
+    href: '/assets/dine-in-menu.pdf',
     primary: false,
   },
 ];
@@ -47,8 +41,8 @@ export default function MobileStickyCTA() {
           <a
             key={label}
             href={href}
-            target={href.startsWith('http') ? '_blank' : undefined}
-            rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            target={href.startsWith('tel:') ? undefined : '_blank'}
+            rel={href.startsWith('tel:') ? undefined : 'noopener noreferrer'}
             className="flex-1 flex flex-col items-center justify-center gap-1 transition-all duration-200 active:scale-95"
             style={{
               background: primary ? '#be2f35' : 'transparent',
