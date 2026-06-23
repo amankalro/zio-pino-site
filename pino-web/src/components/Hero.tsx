@@ -144,7 +144,9 @@ export default function Hero() {
             letterSpacing: '0.01em',
           }}
         >
-          Handcrafted dough, fresh quality ingredients,<br className="hidden sm:block" /> fired in our stone oven — served with warmth<br className="hidden sm:block" /> at the heart of Mascot.
+          <span style={{ color: '#d4a843', fontWeight: 500 }}>At Zio Pino, you're family!</span>
+          <br />
+          Serving authentic Italian food, generous portions and warm hospitality to the Mascot community since 1982.
         </motion.p>
 
         {/* CTA buttons */}
