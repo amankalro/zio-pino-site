@@ -99,7 +99,7 @@ export default function Hero() {
             className="text-xs tracking-[0.28em] uppercase font-medium"
             style={{ color: '#d4a843', fontFamily: "'Inter', sans-serif" }}
           >
-            Since 2004 · Mascot, Sydney
+            Since 1982 · Mascot, Sydney
           </span>
           <div className="h-px w-16 opacity-50" style={{ background: '#d4a843' }} />
         </motion.div>

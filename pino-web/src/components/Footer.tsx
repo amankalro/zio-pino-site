@@ -67,7 +67,7 @@ export default function Footer() {
             >
               Authentic Italian pizza and pasta,
               handcrafted with love in Mascot
-              since 2004.
+              since 1982.
             </p>
             {/* Social links */}
             <div className="flex items-center gap-3">
@@ -229,7 +229,7 @@ export default function Footer() {
               color: 'rgba(249,241,228,0.2)',
             }}
           >
-            Mascot · Sydney · Est. 2004
+            Mascot · Sydney · Est. 1982
           </p>
         </motion.div>
       </div>
