@@ -180,7 +180,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                { label: 'Menu', href: '/assets/zio-pino-menu.pdf', external: true },
+                { label: 'Menu', href: '/assets/dine-in-menu.pdf', external: true },
                 { label: 'Our Story', href: '#story', external: false },
                 { label: 'Atmosphere', href: '#atmosphere', external: false },
                 { label: 'Reviews', href: '#reviews', external: false },

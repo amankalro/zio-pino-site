@@ -281,7 +281,7 @@ export default function GroupMenu() {
           className="flex flex-col sm:flex-row items-center justify-center gap-6"
         >
           <a
-            href="/assets/zio-pino-menu.pdf"
+            href="/assets/dine-in-menu.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 px-6 py-3 text-xs font-medium tracking-widest uppercase transition-all duration-300"
