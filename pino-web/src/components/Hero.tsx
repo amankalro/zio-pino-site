@@ -175,7 +175,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://ziopinopizza.ktu.com.au/"
+            href="/assets/zio-pino-menu.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
