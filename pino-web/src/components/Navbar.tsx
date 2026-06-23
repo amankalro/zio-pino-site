@@ -37,28 +37,12 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex flex-col leading-none group">
-            <span
-              className="text-2xl tracking-widest uppercase font-light"
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                color: '#d4a843',
-                letterSpacing: '0.22em',
-              }}
-            >
-              ZIO
-            </span>
-            <span
-              className="text-3xl -mt-1"
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontWeight: 700,
-                color: '#f9f1e4',
-                letterSpacing: '0.02em',
-              }}
-            >
-              Pino
-            </span>
+          <a href="#" aria-label="Zio Pino Italian Pizzeria — home" className="flex items-center group">
+            <img
+              src="/assets/logo-light.svg"
+              alt="Zio Pino Italian Pizzeria"
+              className="h-14 w-auto"
+            />
           </a>
 
           {/* Desktop links */}

@@ -236,7 +236,7 @@ export default function GroupMenu() {
 
               {/* CTA */}
               <a
-                href="tel:+61293136588"
+                href="tel:+61296692675"
                 className="flex items-center justify-center gap-2 w-full py-3.5 text-sm font-medium tracking-widest uppercase transition-all duration-300"
                 style={{
                   fontFamily: "'Inter', sans-serif",
@@ -315,7 +315,7 @@ export default function GroupMenu() {
               letterSpacing: '0.04em',
             }}
           >
-            Minimum 6 guests · Please call to arrange · (02) 9313 6588
+            Minimum 6 guests · Please call to arrange · (02) 9669 2675
           </p>
         </motion.div>
       </div>

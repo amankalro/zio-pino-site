@@ -146,7 +146,7 @@ export default function CTA() {
           </a>
 
           <a
-            href="tel:+61293136588"
+            href="tel:+61296692675"
             className="flex items-center gap-3 px-9 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
             style={{
               fontFamily: "'Inter', sans-serif",
@@ -167,7 +167,7 @@ export default function CTA() {
             }}
           >
             <Phone size={14} strokeWidth={1.8} />
-            (02) 9313 6588
+            (02) 9669 2675
           </a>
         </motion.div>
 

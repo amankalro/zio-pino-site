@@ -39,23 +39,11 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="mb-5">
-              <span
-                className="block text-lg tracking-widest uppercase font-light mb-0.5"
-                style={{ color: '#d4a843', fontFamily: "'Inter', sans-serif", letterSpacing: '0.22em' }}
-              >
-                ZIO
-              </span>
-              <span
-                className="block text-3xl"
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontWeight: 700,
-                  color: '#f9f1e4',
-                  letterSpacing: '0.02em',
-                }}
-              >
-                Pino
-              </span>
+              <img
+                src="/assets/logo-light.svg"
+                alt="Zio Pino Italian Pizzeria"
+                className="h-20 w-auto"
+              />
             </div>
             <p
               className="font-light leading-relaxed mb-6 text-sm"
@@ -71,36 +59,46 @@ export default function Footer() {
             </p>
             {/* Social links */}
             <div className="flex items-center gap-3">
-              {(['Instagram', 'Facebook'] as const).map((platform) => (
-                <a
-                  key={platform}
-                  href="#"
-                  aria-label={platform}
-                  className="w-9 h-9 flex items-center justify-center transition-all duration-300 text-xs font-medium"
-                  style={{
-                    background: 'rgba(249,241,228,0.06)',
-                    border: '1px solid rgba(249,241,228,0.1)',
-                    color: 'rgba(249,241,228,0.6)',
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '0.6rem',
-                    letterSpacing: '0.04em',
-                  }}
-                  onMouseEnter={(e) => {
-                    const el = e.currentTarget as HTMLElement;
-                    el.style.background = 'rgba(212,168,67,0.12)';
-                    el.style.borderColor = 'rgba(212,168,67,0.4)';
-                    el.style.color = '#d4a843';
-                  }}
-                  onMouseLeave={(e) => {
-                    const el = e.currentTarget as HTMLElement;
-                    el.style.background = 'rgba(249,241,228,0.06)';
-                    el.style.borderColor = 'rgba(249,241,228,0.1)';
-                    el.style.color = 'rgba(249,241,228,0.6)';
-                  }}
+              <a
+                href="https://www.instagram.com/zio.pino.mascot"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Zio Pino on Instagram"
+                className="w-9 h-9 flex items-center justify-center transition-all duration-300"
+                style={{
+                  background: 'rgba(249,241,228,0.06)',
+                  border: '1px solid rgba(249,241,228,0.1)',
+                  color: 'rgba(249,241,228,0.6)',
+                }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.background = 'rgba(212,168,67,0.12)';
+                  el.style.borderColor = 'rgba(212,168,67,0.4)';
+                  el.style.color = '#d4a843';
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.background = 'rgba(249,241,228,0.06)';
+                  el.style.borderColor = 'rgba(249,241,228,0.1)';
+                  el.style.color = 'rgba(249,241,228,0.6)';
+                }}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
                 >
-                  {platform.slice(0, 2)}
-                </a>
-              ))}
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -158,13 +156,13 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <Phone size={13} strokeWidth={1.5} style={{ color: 'rgba(212,168,67,0.55)' }} />
                 <a
-                  href="tel:+61293136588"
+                  href="tel:+61296692675"
                   className="text-sm font-light transition-colors duration-200"
                   style={{ fontFamily: "'Inter', sans-serif", color: 'rgba(249,241,228,0.65)' }}
                   onMouseEnter={(e) => { (e.target as HTMLElement).style.color = '#d4a843'; }}
                   onMouseLeave={(e) => { (e.target as HTMLElement).style.color = 'rgba(249,241,228,0.65)'; }}
                 >
-                  (02) 9313 6588
+                  (02) 9669 2675
                 </a>
               </div>
             </div>
