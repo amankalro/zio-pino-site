@@ -80,43 +80,6 @@ export default function About() {
                 }}
               />
             </div>
-
-            {/* Floating accent block */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={imgInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute -bottom-6 -right-4 md:-right-8 p-6"
-              style={{
-                background: '#1c1a17',
-                border: '1px solid rgba(46,139,87,0.2)',
-                maxWidth: 210,
-              }}
-            >
-              <p
-                className="leading-relaxed text-sm mb-2"
-                style={{
-                  fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: '1.15rem',
-                  color: 'rgba(249,241,228,0.85)',
-                  fontStyle: 'italic',
-                  lineHeight: 1.5,
-                }}
-              >
-                "Every pizza is a love letter to Italy."
-              </p>
-              <span
-                className="text-xs tracking-widest uppercase"
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  color: '#2e8b57',
-                  letterSpacing: '0.18em',
-                  fontSize: '0.65rem',
-                }}
-              >
-                — Pino, Founder
-              </span>
-            </motion.div>
           </motion.div>
 
           {/* Text column */}

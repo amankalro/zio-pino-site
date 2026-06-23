@@ -130,7 +130,7 @@ export default function Hero() {
             className="not-italic"
             style={{ color: '#f9f1e4', fontStyle: 'italic' }}
           >
-            you're family!
+            you're family
           </em>
         </motion.h1>
 
