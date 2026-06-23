@@ -1,11 +1,17 @@
 import { motion } from 'framer-motion';
-import { Phone, MapPin, ShoppingBag } from 'lucide-react';
+import { Phone, MapPin, ShoppingBag, CalendarDays } from 'lucide-react';
 
 const actions = [
   {
     label: 'Call',
     icon: Phone,
     href: 'tel:+61296692675',
+    primary: false,
+  },
+  {
+    label: 'Book',
+    icon: CalendarDays,
+    href: 'https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg==',
     primary: false,
   },
   {

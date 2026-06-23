@@ -178,7 +178,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                { label: 'Menu', href: '/assets/dine-in-menu.pdf', external: true },
+                { label: 'Dine-In Menu', href: '/assets/dine-in-menu.pdf', external: true },
+                { label: 'Take-Away Menu', href: '/assets/zio-pino-menu.pdf', external: true },
                 { label: 'Our Story', href: '#story', external: false },
                 { label: 'Reviews', href: '#reviews', external: false },
                 { label: 'Book a Table', href: 'https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg==', external: true },
