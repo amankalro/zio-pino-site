@@ -46,7 +46,9 @@ export default function Hero() {
         transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
       >
         <picture className="block w-full h-full">
+          <source media="(max-width: 767px)" srcSet="/assets/mobile-hero.webp" type="image/webp" />
           <source media="(max-width: 767px)" srcSet="/assets/mobile-hero.jpg" />
+          <source srcSet="/assets/hero.webp" type="image/webp" />
           <img
             src="/assets/hero.jpg"
             alt="Wood-fired pizza at Zio Pino"

@@ -24,12 +24,15 @@ export default function Atmosphere() {
       {/* Full-bleed background image with parallax */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div className="absolute inset-0 scale-110" style={{ y: imgY }}>
-          <img
-            src="/assets/atmosphere.jpg"
-            alt="Zio Pino warm restaurant atmosphere"
-            className="w-full h-full object-cover object-center"
-            loading="lazy"
-          />
+          <picture className="contents">
+            <source srcSet="/assets/atmosphere.webp" type="image/webp" />
+            <img
+              src="/assets/atmosphere.jpg"
+              alt="Zio Pino warm restaurant atmosphere"
+              className="w-full h-full object-cover object-center"
+              loading="lazy"
+            />
+          </picture>
         </motion.div>
 
         {/* Deep cinematic overlay */}

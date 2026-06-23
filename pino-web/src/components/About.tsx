@@ -66,12 +66,15 @@ export default function About() {
               style={{ aspectRatio: '4/5' }}
             >
               <motion.div className="absolute inset-0 scale-110" style={{ y: imgY }}>
-                <img
-                  src="/assets/founder.jpg"
-                  alt="Pino, founder of Zio Pino"
-                  className="w-full h-full object-cover object-center"
-                  loading="lazy"
-                />
+                <picture className="contents">
+                  <source srcSet="/assets/founder.webp" type="image/webp" />
+                  <img
+                    src="/assets/founder.jpg"
+                    alt="Pino, founder of Zio Pino"
+                    className="w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
+                </picture>
               </motion.div>
 
               {/* Warm overlay */}

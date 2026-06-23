@@ -136,12 +136,15 @@ export default function FeaturedDishes() {
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
             className="lg:col-span-3 relative group overflow-hidden aspect-[3/4] sm:aspect-[4/3]"
           >
-            <img
-              src="/assets/menu_1.jpg"
-              alt="Food spread at Zio Pino Pizza"
-              className="w-full h-full object-cover object-center sm:object-top transition-transform duration-[1.4s] ease-out group-hover:scale-105"
-              loading="lazy"
-            />
+            <picture className="contents">
+              <source srcSet="/assets/menu_1.webp" type="image/webp" />
+              <img
+                src="/assets/menu_1.jpg"
+                alt="Food spread at Zio Pino Pizza"
+                className="w-full h-full object-cover object-center sm:object-top transition-transform duration-[1.4s] ease-out group-hover:scale-105"
+                loading="lazy"
+              />
+            </picture>
             <div
               className="absolute inset-0"
               style={{
@@ -184,12 +187,15 @@ export default function FeaturedDishes() {
             className="lg:col-span-2 relative group overflow-hidden"
             style={{ aspectRatio: '3/4' }}
           >
-            <img
-              src="/assets/lasagna.jpg"
-              alt="Lasagna at Zio Pino"
-              className="w-full h-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-105"
-              loading="lazy"
-            />
+            <picture className="contents">
+              <source srcSet="/assets/lasagna.webp" type="image/webp" />
+              <img
+                src="/assets/lasagna.jpg"
+                alt="Lasagna at Zio Pino"
+                className="w-full h-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-105"
+                loading="lazy"
+              />
+            </picture>
             <div
               className="absolute inset-0"
               style={{

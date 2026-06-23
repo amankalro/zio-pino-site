@@ -14,12 +14,15 @@ export default function CTA() {
     >
       {/* Background: ingredients photo with heavy cinematic treatment */}
       <div className="absolute inset-0">
-        <img
-          src="/assets/ingredients.jpg"
-          alt="Italian ingredients"
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
+        <picture className="contents">
+          <source srcSet="/assets/ingredients.webp" type="image/webp" />
+          <img
+            src="/assets/ingredients.jpg"
+            alt="Italian ingredients"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </picture>
         {/* Multi-layer overlay for drama */}
         <div
           className="absolute inset-0"
