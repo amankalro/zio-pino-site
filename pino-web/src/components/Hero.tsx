@@ -119,15 +119,14 @@ export default function Hero() {
             maxWidth: '16ch',
           }}
         >
-          Authentic
+          At Zio Pino,
           <br />
           <em
             className="not-italic"
             style={{ color: '#d4a843', fontStyle: 'italic' }}
           >
-            Italian
-          </em>{' '}
-          Pizza
+            you're family!
+          </em>
         </motion.h1>
 
         {/* Subheadline */}
@@ -144,8 +143,6 @@ export default function Hero() {
             letterSpacing: '0.01em',
           }}
         >
-          <span style={{ color: '#d4a843', fontWeight: 500 }}>At Zio Pino, you're family!</span>
-          <br />
           Serving authentic Italian food, generous portions and warm hospitality to the Mascot community since 1982.
         </motion.p>
 
