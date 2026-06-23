@@ -66,7 +66,7 @@ export default function FeaturedDishes() {
     <section
       id="menu"
       ref={sectionRef}
-      className="relative overflow-hidden"
+      className="hidden relative overflow-hidden"
       style={{ background: '#0d0c0b', paddingTop: '7rem', paddingBottom: '7rem' }}
     >
       {/* Subtle warm glow top-right */}
