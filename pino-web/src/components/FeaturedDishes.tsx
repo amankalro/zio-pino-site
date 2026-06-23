@@ -9,7 +9,7 @@ const dishes = [
     description:
       'Tomato, cheese and oregano on our signature stone-baked base. Simple, honest, and perfect every time.',
     tag: 'Our Signature',
-    tagColor: '#d4a843',
+    tagColor: '#be2f35',
   },
   {
     name: 'Spaghetti Marinara',
@@ -74,7 +74,7 @@ export default function FeaturedDishes() {
         className="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse at 80% 10%, rgba(212,168,67,0.07) 0%, transparent 60%)',
+            'radial-gradient(ellipse at 80% 10%, rgba(190,47,53,0.07) 0%, transparent 60%)',
         }}
       />
 
@@ -88,10 +88,10 @@ export default function FeaturedDishes() {
           className="mb-16 md:mb-20"
         >
           <div className="flex items-center gap-4 mb-5">
-            <div className="h-px w-12 opacity-50" style={{ background: '#d4a843' }} />
+            <div className="h-px w-12 opacity-50" style={{ background: '#be2f35' }} />
             <span
               className="text-xs tracking-[0.26em] uppercase font-medium"
-              style={{ color: '#d4a843', fontFamily: "'Inter', sans-serif" }}
+              style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
             >
               From Our Kitchen
             </span>
@@ -108,7 +108,7 @@ export default function FeaturedDishes() {
           >
             Handcrafted with
             <br />
-            <em style={{ color: '#d4a843', fontStyle: 'italic' }}>
+            <em style={{ color: '#be2f35', fontStyle: 'italic' }}>
               Italian Soul
             </em>
           </h2>
@@ -170,8 +170,8 @@ export default function FeaturedDishes() {
                   fontFamily: "'Inter', sans-serif",
                   background: 'rgba(13,12,11,0.75)',
                   backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(212,168,67,0.3)',
-                  color: '#d4a843',
+                  border: '1px solid rgba(190,47,53,0.3)',
+                  color: '#be2f35',
                 }}
               >
                 Dine In
@@ -206,7 +206,7 @@ export default function FeaturedDishes() {
             <div className="absolute bottom-6 left-6">
               <span
                 className="block text-xs tracking-[0.22em] uppercase font-medium mb-1"
-                style={{ fontFamily: "'Inter', sans-serif", color: '#d4a843' }}
+                style={{ fontFamily: "'Inter', sans-serif", color: '#be2f35' }}
               >
                 Pasta
               </span>
@@ -253,7 +253,7 @@ export default function FeaturedDishes() {
                 transition: 'border-color 0.3s ease, background 0.3s ease',
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212,168,67,0.3)';
+                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(190,47,53,0.3)';
                 (e.currentTarget as HTMLElement).style.background = 'rgba(39,36,31,0.95)';
               }}
               onMouseLeave={(e) => {
@@ -266,7 +266,7 @@ export default function FeaturedDishes() {
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
                   background:
-                    'radial-gradient(ellipse at 0% 100%, rgba(212,168,67,0.08) 0%, transparent 70%)',
+                    'radial-gradient(ellipse at 0% 100%, rgba(190,47,53,0.08) 0%, transparent 70%)',
                 }}
               />
 
@@ -328,11 +328,11 @@ export default function FeaturedDishes() {
               >
                 <span
                   className="text-xs tracking-widest uppercase"
-                  style={{ fontFamily: "'Inter', sans-serif", color: '#d4a843', letterSpacing: '0.16em' }}
+                  style={{ fontFamily: "'Inter', sans-serif", color: '#be2f35', letterSpacing: '0.16em' }}
                 >
                   Order Now
                 </span>
-                <ArrowRight size={13} style={{ color: '#d4a843' }} />
+                <ArrowRight size={13} style={{ color: '#be2f35' }} />
               </a>
             </motion.div>
           ))}

@@ -64,7 +64,7 @@ export default function Testimonials() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(212,168,67,0.06) 0%, transparent 55%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(190,47,53,0.06) 0%, transparent 55%)',
         }}
       />
 
@@ -78,14 +78,14 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-4 mb-5">
-            <div className="h-px w-12 opacity-50" style={{ background: '#d4a843' }} />
+            <div className="h-px w-12 opacity-50" style={{ background: '#be2f35' }} />
             <span
               className="text-xs tracking-[0.26em] uppercase font-medium"
-              style={{ color: '#d4a843', fontFamily: "'Inter', sans-serif" }}
+              style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
             >
               What Locals Say
             </span>
-            <div className="h-px w-12 opacity-50" style={{ background: '#d4a843' }} />
+            <div className="h-px w-12 opacity-50" style={{ background: '#be2f35' }} />
           </div>
           <h2
             className="font-bold leading-tight mb-4"
@@ -97,14 +97,14 @@ export default function Testimonials() {
             }}
           >
             Loved by the{' '}
-            <em style={{ color: '#d4a843', fontStyle: 'italic' }}>
+            <em style={{ color: '#be2f35', fontStyle: 'italic' }}>
               Community
             </em>
           </h2>
           {/* Stars aggregate */}
           <div className="flex items-center justify-center gap-1.5 mt-6">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} size={18} fill="#d4a843" stroke="none" />
+              <Star key={i} size={18} fill="#be2f35" stroke="none" />
             ))}
             <span
               className="ml-3 text-sm font-medium"
@@ -135,7 +135,7 @@ export default function Testimonials() {
                 transition: 'border-color 0.35s ease, background 0.35s ease',
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212,168,67,0.25)';
+                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(190,47,53,0.25)';
                 (e.currentTarget as HTMLElement).style.background = 'rgba(39,36,31,0.9)';
               }}
               onMouseLeave={(e) => {
@@ -149,8 +149,8 @@ export default function Testimonials() {
                 style={{
                   background:
                     idx % 2 === 0
-                      ? 'radial-gradient(ellipse at 0% 100%, rgba(212,168,67,0.07) 0%, transparent 60%)'
-                      : 'radial-gradient(ellipse at 100% 0%, rgba(212,168,67,0.07) 0%, transparent 60%)',
+                      ? 'radial-gradient(ellipse at 0% 100%, rgba(190,47,53,0.07) 0%, transparent 60%)'
+                      : 'radial-gradient(ellipse at 100% 0%, rgba(190,47,53,0.07) 0%, transparent 60%)',
                 }}
               />
 
@@ -159,13 +159,13 @@ export default function Testimonials() {
                 size={28}
                 strokeWidth={1.2}
                 className="mb-4 opacity-30"
-                style={{ color: '#d4a843' }}
+                style={{ color: '#be2f35' }}
               />
 
               {/* Stars */}
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} size={13} fill="#d4a843" stroke="none" />
+                  <Star key={i} size={13} fill="#be2f35" stroke="none" />
                 ))}
               </div>
 
@@ -202,7 +202,7 @@ export default function Testimonials() {
                   className="text-xs tracking-wide"
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    color: 'rgba(212,168,67,0.6)',
+                    color: 'rgba(190,47,53,0.6)',
                     fontSize: '0.68rem',
                     letterSpacing: '0.06em',
                   }}

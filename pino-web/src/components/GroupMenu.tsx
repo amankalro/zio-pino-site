@@ -16,9 +16,9 @@ const plans = [
     ],
     highlight: false,
     tag: 'Great for groups of 6+',
-    tagColor: 'rgba(212,168,67,0.15)',
-    tagBorder: 'rgba(212,168,67,0.35)',
-    tagText: '#d4a843',
+    tagColor: 'rgba(190,47,53,0.15)',
+    tagBorder: 'rgba(190,47,53,0.35)',
+    tagText: '#be2f35',
   },
   {
     name: 'The Grande',
@@ -59,7 +59,7 @@ export default function GroupMenu() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(212,168,67,0.07) 0%, transparent 60%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(190,47,53,0.07) 0%, transparent 60%)',
         }}
       />
 
@@ -73,16 +73,16 @@ export default function GroupMenu() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-5">
-            <div className="h-px w-12 opacity-40" style={{ background: '#d4a843' }} />
-            <Users size={14} strokeWidth={1.5} style={{ color: '#d4a843' }} />
+            <div className="h-px w-12 opacity-40" style={{ background: '#be2f35' }} />
+            <Users size={14} strokeWidth={1.5} style={{ color: '#be2f35' }} />
             <span
               className="text-xs tracking-[0.26em] uppercase font-medium"
-              style={{ color: '#d4a843', fontFamily: "'Inter', sans-serif" }}
+              style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
             >
               Groups & Functions
             </span>
-            <Users size={14} strokeWidth={1.5} style={{ color: '#d4a843' }} />
-            <div className="h-px w-12 opacity-40" style={{ background: '#d4a843' }} />
+            <Users size={14} strokeWidth={1.5} style={{ color: '#be2f35' }} />
+            <div className="h-px w-12 opacity-40" style={{ background: '#be2f35' }} />
           </div>
 
           <h2
@@ -96,7 +96,7 @@ export default function GroupMenu() {
           >
             Set Menu for
             <br />
-            <em style={{ color: '#d4a843', fontStyle: 'italic' }}>
+            <em style={{ color: '#be2f35', fontStyle: 'italic' }}>
               Larger Groups
             </em>
           </h2>
@@ -129,7 +129,7 @@ export default function GroupMenu() {
                   ? 'rgba(39,36,31,0.95)'
                   : 'rgba(28,26,23,0.8)',
                 border: plan.highlight
-                  ? '1px solid rgba(212,168,67,0.35)'
+                  ? '1px solid rgba(190,47,53,0.35)'
                   : '1px solid rgba(249,241,228,0.08)',
               }}
             >
@@ -139,7 +139,7 @@ export default function GroupMenu() {
                   className="absolute inset-0 pointer-events-none"
                   style={{
                     background:
-                      'radial-gradient(ellipse at 50% 0%, rgba(212,168,67,0.09) 0%, transparent 65%)',
+                      'radial-gradient(ellipse at 50% 0%, rgba(190,47,53,0.09) 0%, transparent 65%)',
                   }}
                 />
               )}
@@ -180,7 +180,7 @@ export default function GroupMenu() {
                   style={{
                     fontFamily: "'Playfair Display', serif",
                     fontSize: '3rem',
-                    color: '#d4a843',
+                    color: '#be2f35',
                     lineHeight: 1,
                   }}
                 >
@@ -219,7 +219,7 @@ export default function GroupMenu() {
                     <Check
                       size={14}
                       strokeWidth={2.5}
-                      style={{ color: '#d4a843', flexShrink: 0 }}
+                      style={{ color: '#be2f35', flexShrink: 0 }}
                     />
                     <span
                       className="text-sm font-light"
@@ -241,23 +241,23 @@ export default function GroupMenu() {
                 style={{
                   fontFamily: "'Inter', sans-serif",
                   letterSpacing: '0.16em',
-                  background: plan.highlight ? '#d4a843' : 'transparent',
+                  background: plan.highlight ? '#be2f35' : 'transparent',
                   border: plan.highlight
-                    ? '1px solid #d4a843'
+                    ? '1px solid #be2f35'
                     : '1px solid rgba(249,241,228,0.2)',
                   color: plan.highlight ? '#0d0c0b' : 'rgba(249,241,228,0.8)',
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
-                  el.style.background = '#d4a843';
-                  el.style.borderColor = '#d4a843';
+                  el.style.background = '#be2f35';
+                  el.style.borderColor = '#be2f35';
                   el.style.color = '#0d0c0b';
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLElement;
                   if (plan.highlight) {
-                    el.style.background = '#d4a843';
-                    el.style.borderColor = '#d4a843';
+                    el.style.background = '#be2f35';
+                    el.style.borderColor = '#be2f35';
                     el.style.color = '#0d0c0b';
                   } else {
                     el.style.background = 'transparent';
@@ -288,19 +288,19 @@ export default function GroupMenu() {
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
-              background: 'rgba(212,168,67,0.1)',
-              border: '1px solid rgba(212,168,67,0.3)',
-              color: '#d4a843',
+              background: 'rgba(190,47,53,0.1)',
+              border: '1px solid rgba(190,47,53,0.3)',
+              color: '#be2f35',
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = 'rgba(212,168,67,0.18)';
-              el.style.borderColor = 'rgba(212,168,67,0.55)';
+              el.style.background = 'rgba(190,47,53,0.18)';
+              el.style.borderColor = 'rgba(190,47,53,0.55)';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = 'rgba(212,168,67,0.1)';
-              el.style.borderColor = 'rgba(212,168,67,0.3)';
+              el.style.background = 'rgba(190,47,53,0.1)';
+              el.style.borderColor = 'rgba(190,47,53,0.3)';
             }}
           >
             <Download size={13} strokeWidth={2} />

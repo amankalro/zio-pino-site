@@ -91,7 +91,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-end pb-16 md:pb-20 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto left-0 right-0">
+      <div className="absolute inset-0 flex flex-col justify-end pb-24 md:pb-28 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto left-0 right-0">
         {/* Eyebrow */}
         <motion.div
           custom={0}
@@ -102,11 +102,11 @@ export default function Hero() {
         >
           <span
             className="text-xs tracking-[0.28em] uppercase font-medium"
-            style={{ color: '#d4a843', fontFamily: "'Inter', sans-serif" }}
+            style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
           >
             Since 1982 · Mascot, Sydney
           </span>
-          <div className="h-px w-16 opacity-50" style={{ background: '#d4a843' }} />
+          <div className="h-px w-16 opacity-50" style={{ background: '#be2f35' }} />
         </motion.div>
 
         {/* Main headline */}
@@ -118,7 +118,7 @@ export default function Hero() {
           className="font-bold leading-[0.92] mb-5"
           style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 'clamp(3.2rem, 9vw, 8rem)',
+            fontSize: 'clamp(2.6rem, 7vw, 5.8rem)',
             color: '#f9f1e4',
             letterSpacing: '-0.01em',
             maxWidth: '16ch',
@@ -128,7 +128,7 @@ export default function Hero() {
           <br />
           <em
             className="not-italic"
-            style={{ color: '#d4a843', fontStyle: 'italic' }}
+            style={{ color: '#f9f1e4', fontStyle: 'italic' }}
           >
             you're family!
           </em>
@@ -167,14 +167,14 @@ export default function Hero() {
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
-              background: '#d4a843',
+              background: '#be2f35',
               color: '#0d0c0b',
             }}
           >
             <span className="relative z-10">Order Online</span>
             <span
               className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
-              style={{ background: '#b8901e' }}
+              style={{ background: '#97232a' }}
             />
           </a>
 
@@ -191,8 +191,8 @@ export default function Hero() {
               color: '#f9f1e4',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212, 168, 67, 0.6)';
-              (e.currentTarget as HTMLElement).style.color = '#d4a843';
+              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(190,47,53, 0.6)';
+              (e.currentTarget as HTMLElement).style.color = '#be2f35';
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.borderColor = 'rgba(249, 241, 228, 0.35)';
@@ -215,8 +215,8 @@ export default function Hero() {
               color: '#f9f1e4',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212, 168, 67, 0.6)';
-              (e.currentTarget as HTMLElement).style.color = '#d4a843';
+              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(190,47,53, 0.6)';
+              (e.currentTarget as HTMLElement).style.color = '#be2f35';
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.borderColor = 'rgba(249, 241, 228, 0.35)';
@@ -240,7 +240,7 @@ export default function Hero() {
               <Icon
                 size={13}
                 strokeWidth={1.5}
-                style={{ color: '#d4a843' }}
+                style={{ color: '#be2f35' }}
               />
               <span
                 className="text-xs font-light tracking-wide"
@@ -268,7 +268,7 @@ export default function Hero() {
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
         >
-          <ChevronDown size={20} strokeWidth={1.5} style={{ color: 'rgba(212, 168, 67, 0.6)' }} />
+          <ChevronDown size={20} strokeWidth={1.5} style={{ color: 'rgba(190,47,53, 0.6)' }} />
         </motion.div>
       </motion.div>
     </section>

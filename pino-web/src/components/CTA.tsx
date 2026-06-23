@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Phone, ExternalLink, Flame } from 'lucide-react';
+import { Phone, ExternalLink, Flame, CalendarDays } from 'lucide-react';
 
 export default function CTA() {
   const ref = useRef<HTMLDivElement>(null);
@@ -56,11 +56,11 @@ export default function CTA() {
           <div
             className="w-14 h-14 flex items-center justify-center rounded-full"
             style={{
-              background: 'rgba(212,168,67,0.12)',
-              border: '1px solid rgba(212,168,67,0.3)',
+              background: 'rgba(190,47,53,0.12)',
+              border: '1px solid rgba(190,47,53,0.3)',
             }}
           >
-            <Flame size={26} strokeWidth={1.5} style={{ color: '#d4a843' }} />
+            <Flame size={26} strokeWidth={1.5} style={{ color: '#be2f35' }} />
           </div>
         </motion.div>
 
@@ -71,14 +71,14 @@ export default function CTA() {
           transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center justify-center gap-4 mb-6"
         >
-          <div className="h-px w-10 opacity-50" style={{ background: '#d4a843' }} />
+          <div className="h-px w-10 opacity-50" style={{ background: '#be2f35' }} />
           <span
             className="text-xs tracking-[0.26em] uppercase font-medium"
-            style={{ color: '#d4a843', fontFamily: "'Inter', sans-serif" }}
+            style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
           >
             Order Tonight
           </span>
-          <div className="h-px w-10 opacity-50" style={{ background: '#d4a843' }} />
+          <div className="h-px w-10 opacity-50" style={{ background: '#be2f35' }} />
         </motion.div>
 
         {/* Headline */}
@@ -96,7 +96,7 @@ export default function CTA() {
         >
           Ready for Real
           <br />
-          <em style={{ color: '#d4a843', fontStyle: 'italic' }}>
+          <em style={{ color: '#be2f35', fontStyle: 'italic' }}>
             Italian Food?
           </em>
         </motion.h2>
@@ -114,8 +114,8 @@ export default function CTA() {
             lineHeight: 1.8,
           }}
         >
-          Order online for pickup or delivery, or call us directly.
-          We're open 7 days — come hungry.
+          Book a table online, order for pickup or delivery, or call us
+          directly. We're open 7 days — come hungry.
         </motion.p>
 
         {/* CTA buttons */}
@@ -133,7 +133,7 @@ export default function CTA() {
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
-              background: '#d4a843',
+              background: '#be2f35',
               color: '#0d0c0b',
               transition: 'transform 0.2s ease',
             }}
@@ -149,6 +149,33 @@ export default function CTA() {
           </a>
 
           <a
+            href="https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-9 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              letterSpacing: '0.18em',
+              background: 'transparent',
+              border: '1px solid rgba(190,47,53,0.5)',
+              color: '#be2f35',
+            }}
+            onMouseEnter={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.background = '#be2f35';
+              el.style.color = '#0d0c0b';
+            }}
+            onMouseLeave={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.background = 'transparent';
+              el.style.color = '#be2f35';
+            }}
+          >
+            <CalendarDays size={14} strokeWidth={1.8} />
+            Book a Table
+          </a>
+
+          <a
             href="tel:+61296692675"
             className="flex items-center gap-3 px-9 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
             style={{
@@ -160,8 +187,8 @@ export default function CTA() {
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.borderColor = 'rgba(212,168,67,0.5)';
-              el.style.color = '#d4a843';
+              el.style.borderColor = 'rgba(190,47,53,0.5)';
+              el.style.color = '#be2f35';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;

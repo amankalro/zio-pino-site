@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ExternalLink } from 'lucide-react';
+import { Menu, X, ExternalLink, CalendarDays } from 'lucide-react';
+
+const BOOKING_URL =
+  'https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg==';
 
 const navLinks = [
-  { label: 'Menu', href: '#menu' },
+  { label: 'Menu', href: '/assets/dine-in-menu.pdf' },
   { label: 'Groups', href: '#group-menu' },
   { label: 'Our Story', href: '#story' },
-  { label: 'Atmosphere', href: '#atmosphere' },
   { label: 'Reviews', href: '#reviews' },
 ];
 
@@ -32,7 +34,7 @@ export default function Navbar() {
             ? 'rgba(13, 12, 11, 0.88)'
             : 'transparent',
           backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(212, 168, 67, 0.12)' : '1px solid transparent',
+          borderBottom: scrolled ? '1px solid rgba(190,47,53, 0.12)' : '1px solid transparent',
         }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
@@ -58,7 +60,7 @@ export default function Navbar() {
                     fontFamily: "'Inter', sans-serif",
                   }}
                   onMouseEnter={(e) => {
-                    (e.target as HTMLElement).style.color = '#d4a843';
+                    (e.target as HTMLElement).style.color = '#be2f35';
                   }}
                   onMouseLeave={(e) => {
                     (e.target as HTMLElement).style.color = 'rgba(249, 241, 228, 0.7)';
@@ -70,8 +72,29 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* CTA button */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* CTA buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-2.5 text-xs font-semibold tracking-widest uppercase transition-all duration-300 rounded-sm"
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                letterSpacing: '0.18em',
+                background: '#be2f35',
+                color: '#0d0c0b',
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.background = '#97232a';
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.background = '#be2f35';
+              }}
+            >
+              <CalendarDays size={12} strokeWidth={2} />
+              Book a Table
+            </a>
             <a
               href="https://ziopinopizza.ktu.com.au/"
               target="_blank"
@@ -80,19 +103,19 @@ export default function Navbar() {
               style={{
                 fontFamily: "'Inter', sans-serif",
                 letterSpacing: '0.18em',
-                background: 'rgba(212, 168, 67, 0.12)',
-                border: '1px solid rgba(212, 168, 67, 0.4)',
-                color: '#d4a843',
+                background: 'rgba(190,47,53, 0.12)',
+                border: '1px solid rgba(190,47,53, 0.4)',
+                color: '#be2f35',
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLElement;
-                el.style.background = '#d4a843';
+                el.style.background = '#be2f35';
                 el.style.color = '#0d0c0b';
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLElement;
-                el.style.background = 'rgba(212, 168, 67, 0.12)';
-                el.style.color = '#d4a843';
+                el.style.background = 'rgba(190,47,53, 0.12)';
+                el.style.color = '#be2f35';
               }}
             >
               <ExternalLink size={12} strokeWidth={2} />
@@ -152,16 +175,34 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.07 + 0.05 }}
+                className="flex flex-col items-center gap-4 mt-4"
               >
+                <a
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className="px-8 py-3 text-sm tracking-widest uppercase"
+                  style={{
+                    background: '#be2f35',
+                    color: '#0d0c0b',
+                    fontFamily: "'Inter', sans-serif",
+                    letterSpacing: '0.18em',
+                    fontWeight: 600,
+                  }}
+                >
+                  Book a Table
+                </a>
                 <a
                   href="https://ziopinopizza.ktu.com.au/"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="mt-4 px-8 py-3 text-sm tracking-widest uppercase"
+                  className="px-8 py-3 text-sm tracking-widest uppercase"
                   style={{
-                    background: '#d4a843',
-                    color: '#0d0c0b',
+                    background: 'transparent',
+                    border: '1px solid rgba(190,47,53,0.5)',
+                    color: '#be2f35',
                     fontFamily: "'Inter', sans-serif",
                     letterSpacing: '0.18em',
                     fontWeight: 600,
