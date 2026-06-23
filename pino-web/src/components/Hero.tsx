@@ -194,7 +194,31 @@ export default function Hero() {
               (e.currentTarget as HTMLElement).style.color = '#f9f1e4';
             }}
           >
-            View Menu
+            Take-Away Menu
+          </a>
+
+          <a
+            href="/assets/dine-in-menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              letterSpacing: '0.18em',
+              background: 'transparent',
+              border: '1px solid rgba(249, 241, 228, 0.35)',
+              color: '#f9f1e4',
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212, 168, 67, 0.6)';
+              (e.currentTarget as HTMLElement).style.color = '#d4a843';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(249, 241, 228, 0.35)';
+              (e.currentTarget as HTMLElement).style.color = '#f9f1e4';
+            }}
+          >
+            Dine-In Menu
           </a>
         </motion.div>
 
