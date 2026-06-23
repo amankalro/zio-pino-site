@@ -32,7 +32,7 @@ export default function MobileStickyCTA() {
       style={{
         background: 'rgba(13,12,11,0.95)',
         backdropFilter: 'blur(20px) saturate(180%)',
-        borderTop: '1px solid rgba(190,47,53,0.2)',
+        borderTop: '1px solid rgba(46,139,87,0.2)',
         paddingBottom: 'env(safe-area-inset-bottom)',
       }}
     >
@@ -45,14 +45,14 @@ export default function MobileStickyCTA() {
             rel={href.startsWith('tel:') ? undefined : 'noopener noreferrer'}
             className="flex-1 flex flex-col items-center justify-center gap-1 transition-all duration-200 active:scale-95"
             style={{
-              background: primary ? '#be2f35' : 'transparent',
+              background: primary ? '#a3242b' : 'transparent',
               borderRight: i < actions.length - 1 ? '1px solid rgba(249,241,228,0.08)' : 'none',
             }}
           >
             <Icon
               size={18}
               strokeWidth={1.6}
-              style={{ color: primary ? '#0d0c0b' : 'rgba(249,241,228,0.8)' }}
+              style={{ color: primary ? '#f9f1e4' :'rgba(249,241,228,0.8)' }}
             />
             <span
               className="text-xs font-medium tracking-widest uppercase"
@@ -60,7 +60,7 @@ export default function MobileStickyCTA() {
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '0.6rem',
                 letterSpacing: '0.16em',
-                color: primary ? '#0d0c0b' : 'rgba(249,241,228,0.6)',
+                color: primary ? '#f9f1e4' :'rgba(249,241,228,0.6)',
               }}
             >
               {label}

@@ -40,7 +40,7 @@ export default function About() {
         className="absolute left-0 top-1/2 -translate-y-1/2 w-1/3 h-3/4 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse at 0% 50%, rgba(190,47,53,0.08) 0%, transparent 65%)',
+            'radial-gradient(ellipse at 0% 50%, rgba(46,139,87,0.08) 0%, transparent 65%)',
         }}
       />
 
@@ -89,7 +89,7 @@ export default function About() {
               className="absolute -bottom-6 -right-4 md:-right-8 p-6"
               style={{
                 background: '#1c1a17',
-                border: '1px solid rgba(190,47,53,0.2)',
+                border: '1px solid rgba(46,139,87,0.2)',
                 maxWidth: 210,
               }}
             >
@@ -109,7 +109,7 @@ export default function About() {
                 className="text-xs tracking-widest uppercase"
                 style={{
                   fontFamily: "'Inter', sans-serif",
-                  color: '#be2f35',
+                  color: '#2e8b57',
                   letterSpacing: '0.18em',
                   fontSize: '0.65rem',
                 }}
@@ -127,10 +127,10 @@ export default function About() {
               animate={inView ? 'visible' : 'hidden'}
               className="flex items-center gap-4 mb-6"
             >
-              <div className="h-px w-10 opacity-50" style={{ background: '#be2f35' }} />
+              <div className="h-px w-10 opacity-50" style={{ background: '#2e8b57' }} />
               <span
                 className="text-xs tracking-[0.26em] uppercase font-medium"
-                style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
+                style={{ color: '#2e8b57', fontFamily: "'Inter', sans-serif" }}
               >
                 Our Story
               </span>
@@ -150,7 +150,7 @@ export default function About() {
             >
               A Family Table
               <br />
-              <em style={{ color: '#be2f35', fontStyle: 'italic' }}>
+              <em style={{ color: '#2e8b57', fontStyle: 'italic' }}>
                 in the Heart of Mascot
               </em>
             </motion.h2>
@@ -211,7 +211,7 @@ export default function About() {
                   fontFamily: "'Cormorant Garamond', serif",
                   fontSize: '1.5rem',
                   fontStyle: 'italic',
-                  color: '#be2f35',
+                  color: '#2e8b57',
                   lineHeight: 1.6,
                 }}
               >

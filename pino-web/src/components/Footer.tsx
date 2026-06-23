@@ -21,7 +21,7 @@ export default function Footer() {
         className="h-px w-full"
         style={{
           background:
-            'linear-gradient(90deg, transparent, rgba(190,47,53,0.35) 30%, rgba(190,47,53,0.35) 70%, transparent)',
+            'linear-gradient(90deg, transparent, rgba(46,139,87,0.35) 30%, rgba(46,139,87,0.35) 70%, transparent)',
         }}
       />
 
@@ -72,9 +72,9 @@ export default function Footer() {
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
-                  el.style.background = 'rgba(190,47,53,0.12)';
-                  el.style.borderColor = 'rgba(190,47,53,0.4)';
-                  el.style.color = '#be2f35';
+                  el.style.background = 'rgba(46,139,87,0.12)';
+                  el.style.borderColor = 'rgba(46,139,87,0.4)';
+                  el.style.color = '#2e8b57';
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLElement;
@@ -106,14 +106,14 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs tracking-[0.22em] uppercase font-medium mb-6"
-              style={{ fontFamily: "'Inter', sans-serif", color: '#be2f35', letterSpacing: '0.2em' }}
+              style={{ fontFamily: "'Inter', sans-serif", color: '#2e8b57', letterSpacing: '0.2em' }}
             >
               Opening Hours
             </h4>
             <ul className="space-y-3">
               {hours.map(({ day, time }) => (
                 <li key={day} className="flex items-start gap-2">
-                  <Clock size={12} strokeWidth={1.5} className="mt-0.5 shrink-0" style={{ color: 'rgba(190,47,53,0.55)' }} />
+                  <Clock size={12} strokeWidth={1.5} className="mt-0.5 shrink-0" style={{ color: 'rgba(46,139,87,0.55)' }} />
                   <div>
                     <span
                       className="block text-xs font-light"
@@ -137,13 +137,13 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs tracking-[0.22em] uppercase font-medium mb-6"
-              style={{ fontFamily: "'Inter', sans-serif", color: '#be2f35', letterSpacing: '0.2em' }}
+              style={{ fontFamily: "'Inter', sans-serif", color: '#2e8b57', letterSpacing: '0.2em' }}
             >
               Visit Us
             </h4>
             <div className="space-y-4">
               <div className="flex items-start gap-2">
-                <MapPin size={13} strokeWidth={1.5} className="mt-0.5 shrink-0" style={{ color: 'rgba(190,47,53,0.55)' }} />
+                <MapPin size={13} strokeWidth={1.5} className="mt-0.5 shrink-0" style={{ color: 'rgba(46,139,87,0.55)' }} />
                 <address
                   className="not-italic text-sm font-light leading-relaxed"
                   style={{ fontFamily: "'Inter', sans-serif", color: 'rgba(249,241,228,0.65)' }}
@@ -154,12 +154,12 @@ export default function Footer() {
                 </address>
               </div>
               <div className="flex items-center gap-2">
-                <Phone size={13} strokeWidth={1.5} style={{ color: 'rgba(190,47,53,0.55)' }} />
+                <Phone size={13} strokeWidth={1.5} style={{ color: 'rgba(46,139,87,0.55)' }} />
                 <a
                   href="tel:+61296692675"
                   className="text-sm font-light transition-colors duration-200"
                   style={{ fontFamily: "'Inter', sans-serif", color: 'rgba(249,241,228,0.65)' }}
-                  onMouseEnter={(e) => { (e.target as HTMLElement).style.color = '#be2f35'; }}
+                  onMouseEnter={(e) => { (e.target as HTMLElement).style.color = '#2e8b57'; }}
                   onMouseLeave={(e) => { (e.target as HTMLElement).style.color = 'rgba(249,241,228,0.65)'; }}
                 >
                   (02) 9669 2675
@@ -172,7 +172,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs tracking-[0.22em] uppercase font-medium mb-6"
-              style={{ fontFamily: "'Inter', sans-serif", color: '#be2f35', letterSpacing: '0.2em' }}
+              style={{ fontFamily: "'Inter', sans-serif", color: '#2e8b57', letterSpacing: '0.2em' }}
             >
               Quick Links
             </h4>
@@ -192,7 +192,7 @@ export default function Footer() {
                     rel={external ? 'noopener noreferrer' : undefined}
                     className="text-sm font-light transition-colors duration-200"
                     style={{ fontFamily: "'Inter', sans-serif", color: 'rgba(249,241,228,0.5)' }}
-                    onMouseEnter={(e) => { (e.target as HTMLElement).style.color = '#be2f35'; }}
+                    onMouseEnter={(e) => { (e.target as HTMLElement).style.color = '#2e8b57'; }}
                     onMouseLeave={(e) => { (e.target as HTMLElement).style.color = 'rgba(249,241,228,0.5)'; }}
                   >
                     {label}

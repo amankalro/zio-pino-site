@@ -78,10 +78,10 @@ export default function Atmosphere() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="flex items-center gap-4 mb-6"
           >
-            <div className="h-px w-10 opacity-50" style={{ background: '#be2f35' }} />
+            <div className="h-px w-10 opacity-50" style={{ background: '#2e8b57' }} />
             <span
               className="text-xs tracking-[0.26em] uppercase font-medium"
-              style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
+              style={{ color: '#2e8b57', fontFamily: "'Inter', sans-serif" }}
             >
               The Experience
             </span>
@@ -102,7 +102,7 @@ export default function Atmosphere() {
             Where Every Meal
             <br />
             Becomes a{' '}
-            <em style={{ color: '#be2f35', fontStyle: 'italic' }}>Memory</em>
+            <em style={{ color: '#2e8b57', fontStyle: 'italic' }}>Memory</em>
           </motion.h2>
 
           <motion.p
@@ -128,7 +128,7 @@ export default function Atmosphere() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.9, delay: 0.32, ease: [0.22, 1, 0.36, 1] }}
             className="relative pl-6 mb-10"
-            style={{ borderLeft: '2px solid rgba(190,47,53,0.5)' }}
+            style={{ borderLeft: '2px solid rgba(46,139,87,0.5)' }}
           >
             <p
               className="font-light italic leading-relaxed"
@@ -144,7 +144,7 @@ export default function Atmosphere() {
             </p>
             <footer
               className="mt-3 text-xs tracking-widest uppercase"
-              style={{ fontFamily: "'Inter', sans-serif", color: 'rgba(190,47,53,0.7)', letterSpacing: '0.18em' }}
+              style={{ fontFamily: "'Inter', sans-serif", color: 'rgba(46,139,87,0.7)', letterSpacing: '0.18em' }}
             >
               — A Happy Regular
             </footer>
@@ -161,18 +161,18 @@ export default function Atmosphere() {
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
-              background: 'rgba(190,47,53,0.12)',
-              border: '1px solid rgba(190,47,53,0.35)',
-              color: '#be2f35',
+              background: 'rgba(46,139,87,0.12)',
+              border: '1px solid rgba(46,139,87,0.35)',
+              color: '#2e8b57',
               transition: 'all 0.3s ease',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = '#be2f35';
+              (e.currentTarget as HTMLElement).style.background = '#2e8b57';
               (e.currentTarget as HTMLElement).style.color = '#0d0c0b';
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background = 'rgba(190,47,53,0.12)';
-              (e.currentTarget as HTMLElement).style.color = '#be2f35';
+              (e.currentTarget as HTMLElement).style.background = 'rgba(46,139,87,0.12)';
+              (e.currentTarget as HTMLElement).style.color = '#2e8b57';
             }}
           >
             Book a Table

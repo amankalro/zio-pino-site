@@ -34,7 +34,7 @@ export default function Navbar() {
             ? 'rgba(13, 12, 11, 0.88)'
             : 'transparent',
           backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(190,47,53, 0.12)' : '1px solid transparent',
+          borderBottom: scrolled ? '1px solid rgba(46,139,87, 0.12)' : '1px solid transparent',
         }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
@@ -60,7 +60,7 @@ export default function Navbar() {
                     fontFamily: "'Inter', sans-serif",
                   }}
                   onMouseEnter={(e) => {
-                    (e.target as HTMLElement).style.color = '#be2f35';
+                    (e.target as HTMLElement).style.color = '#2e8b57';
                   }}
                   onMouseLeave={(e) => {
                     (e.target as HTMLElement).style.color = 'rgba(249, 241, 228, 0.7)';
@@ -82,14 +82,14 @@ export default function Navbar() {
               style={{
                 fontFamily: "'Inter', sans-serif",
                 letterSpacing: '0.18em',
-                background: '#be2f35',
-                color: '#0d0c0b',
+                background: '#a3242b',
+                color: '#f9f1e4',
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.background = '#97232a';
+                (e.currentTarget as HTMLElement).style.background = '#861c22';
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.background = '#be2f35';
+                (e.currentTarget as HTMLElement).style.background = '#a3242b';
               }}
             >
               <CalendarDays size={12} strokeWidth={2} />
@@ -103,19 +103,19 @@ export default function Navbar() {
               style={{
                 fontFamily: "'Inter', sans-serif",
                 letterSpacing: '0.18em',
-                background: 'rgba(190,47,53, 0.12)',
-                border: '1px solid rgba(190,47,53, 0.4)',
-                color: '#be2f35',
+                background: 'rgba(163,36,43, 0.12)',
+                border: '1px solid rgba(163,36,43, 0.4)',
+                color: '#e0888c',
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLElement;
-                el.style.background = '#be2f35';
-                el.style.color = '#0d0c0b';
+                el.style.background = '#a3242b';
+                el.style.color = '#f9f1e4';
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLElement;
-                el.style.background = 'rgba(190,47,53, 0.12)';
-                el.style.color = '#be2f35';
+                el.style.background = 'rgba(163,36,43, 0.12)';
+                el.style.color = '#e0888c';
               }}
             >
               <ExternalLink size={12} strokeWidth={2} />
@@ -184,8 +184,8 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className="px-8 py-3 text-sm tracking-widest uppercase"
                   style={{
-                    background: '#be2f35',
-                    color: '#0d0c0b',
+                    background: '#a3242b',
+                    color: '#f9f1e4',
                     fontFamily: "'Inter', sans-serif",
                     letterSpacing: '0.18em',
                     fontWeight: 600,
@@ -201,8 +201,8 @@ export default function Navbar() {
                   className="px-8 py-3 text-sm tracking-widest uppercase"
                   style={{
                     background: 'transparent',
-                    border: '1px solid rgba(190,47,53,0.5)',
-                    color: '#be2f35',
+                    border: '1px solid rgba(163,36,43,0.6)',
+                    color: '#e0888c',
                     fontFamily: "'Inter', sans-serif",
                     letterSpacing: '0.18em',
                     fontWeight: 600,

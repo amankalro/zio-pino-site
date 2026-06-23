@@ -15,10 +15,6 @@ const plans = [
       'Pasta selection to share',
     ],
     highlight: false,
-    tag: 'Great for groups of 6+',
-    tagColor: 'rgba(190,47,53,0.15)',
-    tagBorder: 'rgba(190,47,53,0.35)',
-    tagText: '#be2f35',
   },
   {
     name: 'The Grande',
@@ -33,10 +29,6 @@ const plans = [
       'Calamari platters to share',
     ],
     highlight: true,
-    tag: 'Most Popular',
-    tagColor: 'rgba(194,65,12,0.18)',
-    tagBorder: 'rgba(194,65,12,0.45)',
-    tagText: '#f97316',
   },
 ];
 
@@ -59,7 +51,7 @@ export default function GroupMenu() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(190,47,53,0.07) 0%, transparent 60%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(46,139,87,0.07) 0%, transparent 60%)',
         }}
       />
 
@@ -73,16 +65,16 @@ export default function GroupMenu() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-5">
-            <div className="h-px w-12 opacity-40" style={{ background: '#be2f35' }} />
-            <Users size={14} strokeWidth={1.5} style={{ color: '#be2f35' }} />
+            <div className="h-px w-12 opacity-40" style={{ background: '#2e8b57' }} />
+            <Users size={14} strokeWidth={1.5} style={{ color: '#2e8b57' }} />
             <span
               className="text-xs tracking-[0.26em] uppercase font-medium"
-              style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
+              style={{ color: '#2e8b57', fontFamily: "'Inter', sans-serif" }}
             >
               Groups & Functions
             </span>
-            <Users size={14} strokeWidth={1.5} style={{ color: '#be2f35' }} />
-            <div className="h-px w-12 opacity-40" style={{ background: '#be2f35' }} />
+            <Users size={14} strokeWidth={1.5} style={{ color: '#2e8b57' }} />
+            <div className="h-px w-12 opacity-40" style={{ background: '#2e8b57' }} />
           </div>
 
           <h2
@@ -96,7 +88,7 @@ export default function GroupMenu() {
           >
             Set Menu for
             <br />
-            <em style={{ color: '#be2f35', fontStyle: 'italic' }}>
+            <em style={{ color: '#2e8b57', fontStyle: 'italic' }}>
               Larger Groups
             </em>
           </h2>
@@ -129,7 +121,7 @@ export default function GroupMenu() {
                   ? 'rgba(39,36,31,0.95)'
                   : 'rgba(28,26,23,0.8)',
                 border: plan.highlight
-                  ? '1px solid rgba(190,47,53,0.35)'
+                  ? '1px solid rgba(46,139,87,0.35)'
                   : '1px solid rgba(249,241,228,0.08)',
               }}
             >
@@ -139,27 +131,10 @@ export default function GroupMenu() {
                   className="absolute inset-0 pointer-events-none"
                   style={{
                     background:
-                      'radial-gradient(ellipse at 50% 0%, rgba(190,47,53,0.09) 0%, transparent 65%)',
+                      'radial-gradient(ellipse at 50% 0%, rgba(46,139,87,0.09) 0%, transparent 65%)',
                   }}
                 />
               )}
-
-              {/* Tag */}
-              <div className="flex items-start justify-between mb-6">
-                <span
-                  className="text-xs px-3 py-1.5 font-medium tracking-wide"
-                  style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '0.7rem',
-                    letterSpacing: '0.1em',
-                    background: plan.tagColor,
-                    border: `1px solid ${plan.tagBorder}`,
-                    color: plan.tagText,
-                  }}
-                >
-                  {plan.tag}
-                </span>
-              </div>
 
               {/* Name & price */}
               <h3
@@ -180,7 +155,7 @@ export default function GroupMenu() {
                   style={{
                     fontFamily: "'Playfair Display', serif",
                     fontSize: '3rem',
-                    color: '#be2f35',
+                    color: '#2e8b57',
                     lineHeight: 1,
                   }}
                 >
@@ -219,7 +194,7 @@ export default function GroupMenu() {
                     <Check
                       size={14}
                       strokeWidth={2.5}
-                      style={{ color: '#be2f35', flexShrink: 0 }}
+                      style={{ color: '#2e8b57', flexShrink: 0 }}
                     />
                     <span
                       className="text-sm font-light"
@@ -241,24 +216,24 @@ export default function GroupMenu() {
                 style={{
                   fontFamily: "'Inter', sans-serif",
                   letterSpacing: '0.16em',
-                  background: plan.highlight ? '#be2f35' : 'transparent',
+                  background: plan.highlight ? '#a3242b' : 'transparent',
                   border: plan.highlight
-                    ? '1px solid #be2f35'
+                    ? '1px solid #a3242b'
                     : '1px solid rgba(249,241,228,0.2)',
-                  color: plan.highlight ? '#0d0c0b' : 'rgba(249,241,228,0.8)',
+                  color: plan.highlight ? '#f9f1e4' : 'rgba(249,241,228,0.8)',
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
-                  el.style.background = '#be2f35';
-                  el.style.borderColor = '#be2f35';
-                  el.style.color = '#0d0c0b';
+                  el.style.background = '#a3242b';
+                  el.style.borderColor = '#a3242b';
+                  el.style.color = '#f9f1e4';
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLElement;
                   if (plan.highlight) {
-                    el.style.background = '#be2f35';
-                    el.style.borderColor = '#be2f35';
-                    el.style.color = '#0d0c0b';
+                    el.style.background = '#a3242b';
+                    el.style.borderColor = '#a3242b';
+                    el.style.color = '#f9f1e4';
                   } else {
                     el.style.background = 'transparent';
                     el.style.borderColor = 'rgba(249,241,228,0.2)';
@@ -288,19 +263,19 @@ export default function GroupMenu() {
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
-              background: 'rgba(190,47,53,0.1)',
-              border: '1px solid rgba(190,47,53,0.3)',
-              color: '#be2f35',
+              background: 'rgba(163,36,43,0.12)',
+              border: '1px solid rgba(163,36,43,0.4)',
+              color: '#e0888c',
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = 'rgba(190,47,53,0.18)';
-              el.style.borderColor = 'rgba(190,47,53,0.55)';
+              el.style.background = 'rgba(163,36,43,0.2)';
+              el.style.borderColor = 'rgba(163,36,43,0.6)';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = 'rgba(190,47,53,0.1)';
-              el.style.borderColor = 'rgba(190,47,53,0.3)';
+              el.style.background = 'rgba(163,36,43,0.12)';
+              el.style.borderColor = 'rgba(163,36,43,0.4)';
             }}
           >
             <Download size={13} strokeWidth={2} />

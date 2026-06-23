@@ -56,11 +56,11 @@ export default function CTA() {
           <div
             className="w-14 h-14 flex items-center justify-center rounded-full"
             style={{
-              background: 'rgba(190,47,53,0.12)',
-              border: '1px solid rgba(190,47,53,0.3)',
+              background: 'rgba(46,139,87,0.12)',
+              border: '1px solid rgba(46,139,87,0.3)',
             }}
           >
-            <Flame size={26} strokeWidth={1.5} style={{ color: '#be2f35' }} />
+            <Flame size={26} strokeWidth={1.5} style={{ color: '#2e8b57' }} />
           </div>
         </motion.div>
 
@@ -71,14 +71,14 @@ export default function CTA() {
           transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center justify-center gap-4 mb-6"
         >
-          <div className="h-px w-10 opacity-50" style={{ background: '#be2f35' }} />
+          <div className="h-px w-10 opacity-50" style={{ background: '#2e8b57' }} />
           <span
             className="text-xs tracking-[0.26em] uppercase font-medium"
-            style={{ color: '#be2f35', fontFamily: "'Inter', sans-serif" }}
+            style={{ color: '#2e8b57', fontFamily: "'Inter', sans-serif" }}
           >
             Order Tonight
           </span>
-          <div className="h-px w-10 opacity-50" style={{ background: '#be2f35' }} />
+          <div className="h-px w-10 opacity-50" style={{ background: '#2e8b57' }} />
         </motion.div>
 
         {/* Headline */}
@@ -96,7 +96,7 @@ export default function CTA() {
         >
           Ready for Real
           <br />
-          <em style={{ color: '#be2f35', fontStyle: 'italic' }}>
+          <em style={{ color: '#2e8b57', fontStyle: 'italic' }}>
             Italian Food?
           </em>
         </motion.h2>
@@ -133,8 +133,8 @@ export default function CTA() {
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
-              background: '#be2f35',
-              color: '#0d0c0b',
+              background: '#a3242b',
+              color: '#f9f1e4',
               transition: 'transform 0.2s ease',
             }}
             onMouseEnter={(e) => {
@@ -157,18 +157,18 @@ export default function CTA() {
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
               background: 'transparent',
-              border: '1px solid rgba(190,47,53,0.5)',
-              color: '#be2f35',
+              border: '1px solid rgba(163,36,43,0.6)',
+              color: '#e0888c',
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = '#be2f35';
-              el.style.color = '#0d0c0b';
+              el.style.background = '#a3242b';
+              el.style.color = '#f9f1e4';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;
               el.style.background = 'transparent';
-              el.style.color = '#be2f35';
+              el.style.color = '#e0888c';
             }}
           >
             <CalendarDays size={14} strokeWidth={1.8} />
@@ -187,8 +187,8 @@ export default function CTA() {
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.borderColor = 'rgba(190,47,53,0.5)';
-              el.style.color = '#be2f35';
+              el.style.borderColor = 'rgba(163,36,43,0.6)';
+              el.style.color = '#e0888c';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;
