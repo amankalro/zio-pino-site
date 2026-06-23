@@ -1,12 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 
-const stats = [
-  { value: '40+', label: 'Years Serving' },
-  { value: '100%', label: 'Stone-fired Oven' },
-  { value: 'Family', label: 'Run & Owned' },
-];
-
 const fadeUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 36 },
   visible: {
@@ -223,41 +217,6 @@ export default function About() {
               >
                 Grazie for being part of our story.
               </p>
-            </motion.div>
-
-            {/* Stats row */}
-            <motion.div
-              variants={fadeUp(0.24)}
-              initial="hidden"
-              animate={inView ? 'visible' : 'hidden'}
-              className="grid grid-cols-3 gap-6 pt-8"
-              style={{ borderTop: '1px solid rgba(249,241,228,0.1)' }}
-            >
-              {stats.map(({ value, label }) => (
-                <div key={label}>
-                  <p
-                    className="font-bold leading-none mb-2"
-                    style={{
-                      fontFamily: "'Playfair Display', serif",
-                      fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
-                      color: '#be2f35',
-                    }}
-                  >
-                    {value}
-                  </p>
-                  <p
-                    className="text-xs tracking-wide font-light"
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      color: 'rgba(249,241,228,0.5)',
-                      letterSpacing: '0.06em',
-                      lineHeight: 1.4,
-                    }}
-                  >
-                    {label}
-                  </p>
-                </div>
-              ))}
             </motion.div>
           </div>
         </div>
