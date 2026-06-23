@@ -134,13 +134,12 @@ export default function FeaturedDishes() {
             initial={{ opacity: 0, scale: 1.04 }}
             animate={headingInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-            className="lg:col-span-3 relative group overflow-hidden"
-            style={{ aspectRatio: '4/3' }}
+            className="lg:col-span-3 relative group overflow-hidden aspect-[3/4] sm:aspect-[4/3]"
           >
             <img
               src="/assets/menu_1.jpg"
               alt="Food spread at Zio Pino Pizza"
-              className="w-full h-full object-cover object-top transition-transform duration-[1.4s] ease-out group-hover:scale-105"
+              className="w-full h-full object-cover object-center sm:object-top transition-transform duration-[1.4s] ease-out group-hover:scale-105"
               loading="lazy"
             />
             <div
