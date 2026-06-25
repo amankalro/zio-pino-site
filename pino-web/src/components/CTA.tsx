@@ -94,10 +94,10 @@ export default function CTA() {
             letterSpacing: '-0.01em',
           }}
         >
-          Ready for Real
+          Authentic Italian.
           <br />
           <em style={{ color: '#2e8b57', fontStyle: 'italic' }}>
-            Italian Food?
+            Since 1982.
           </em>
         </motion.h2>
 
@@ -114,8 +114,7 @@ export default function CTA() {
             lineHeight: 1.8,
           }}
         >
-          Book a table online, order for pickup or delivery, or call us
-          directly. We're open 7 days — come hungry.
+          Family recipes. Fresh ingredients. Made with love.
         </motion.p>
 
         {/* CTA buttons */}
