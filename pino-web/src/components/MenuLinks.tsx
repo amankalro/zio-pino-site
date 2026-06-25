@@ -46,8 +46,7 @@ export default function MenuLinks() {
             letterSpacing: '-0.01em',
           }}
         >
-          Dine In or{' '}
-          <em style={{ color: '#2e8b57', fontStyle: 'italic' }}>Take Away</em>
+          <em style={{ color: '#2e8b57', fontStyle: 'italic' }}>Dine In or Take Away</em>
         </motion.h2>
 
         {/* Menu buttons */}

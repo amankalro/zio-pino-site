@@ -46,13 +46,12 @@ export default function Hero() {
         transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
       >
         <picture className="block w-full h-full">
-          <source media="(max-width: 767px)" srcSet="/assets/mobile-hero.webp" type="image/webp" />
-          <source media="(max-width: 767px)" srcSet="/assets/mobile-hero.jpg" />
-          <source srcSet="/assets/hero.webp" type="image/webp" />
+          <source srcSet="/assets/mobile-hero.webp" type="image/webp" />
           <img
-            src="/assets/hero.jpg"
-            alt="Wood-fired pizza at Zio Pino"
+            src="/assets/mobile-hero.jpg"
+            alt="A spread of Italian dishes at Zio Pino"
             className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 30%' }}
             loading="eager"
             fetchPriority="high"
           />
@@ -124,13 +123,13 @@ export default function Hero() {
             maxWidth: '16ch',
           }}
         >
-          At Zio Pino,
+          Benvenuti a
           <br />
           <em
             className="not-italic"
             style={{ color: '#f9f1e4', fontStyle: 'italic' }}
           >
-            you're family
+            Zio Pino
           </em>
         </motion.h1>
 
