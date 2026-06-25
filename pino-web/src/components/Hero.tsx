@@ -162,19 +162,21 @@ export default function Hero() {
             href="https://ziopinopizza.ktu.com.au/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative px-8 py-4 text-sm font-semibold tracking-widest uppercase overflow-hidden transition-all duration-300"
+            className="px-8 py-4 text-sm font-semibold tracking-widest uppercase transition-all duration-300"
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
               background: '#a3242b',
               color: '#f9f1e4',
             }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.background = '#861c22';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLElement).style.background = '#a3242b';
+            }}
           >
-            <span className="relative z-10">Order Online</span>
-            <span
-              className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
-              style={{ background: '#861c22' }}
-            />
+            Order Online
           </a>
 
           <a
@@ -190,11 +192,11 @@ export default function Hero() {
               color: '#f9f1e4',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(163,36,43, 0.6)';
-              (e.currentTarget as HTMLElement).style.color = '#a3242b';
+              (e.currentTarget as HTMLElement).style.background = '#a3242b';
+              (e.currentTarget as HTMLElement).style.color = '#f9f1e4';
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(249, 241, 228, 0.35)';
+              (e.currentTarget as HTMLElement).style.background = 'transparent';
               (e.currentTarget as HTMLElement).style.color = '#f9f1e4';
             }}
           >
@@ -214,11 +216,11 @@ export default function Hero() {
               color: '#f9f1e4',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(163,36,43, 0.6)';
-              (e.currentTarget as HTMLElement).style.color = '#a3242b';
+              (e.currentTarget as HTMLElement).style.background = '#a3242b';
+              (e.currentTarget as HTMLElement).style.color = '#f9f1e4';
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(249, 241, 228, 0.35)';
+              (e.currentTarget as HTMLElement).style.background = 'transparent';
               (e.currentTarget as HTMLElement).style.color = '#f9f1e4';
             }}
           >

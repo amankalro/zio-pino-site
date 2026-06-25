@@ -128,19 +128,18 @@ export default function CTA() {
             href="https://ziopinopizza.ktu.com.au/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex items-center gap-3 px-9 py-4 text-sm font-semibold tracking-widest uppercase overflow-hidden"
+            className="flex items-center gap-3 px-9 py-4 text-sm font-semibold tracking-widest uppercase transition-all duration-300"
             style={{
               fontFamily: "'Inter', sans-serif",
               letterSpacing: '0.18em',
               background: '#a3242b',
               color: '#f9f1e4',
-              transition: 'transform 0.2s ease',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
+              (e.currentTarget as HTMLElement).style.background = '#861c22';
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
+              (e.currentTarget as HTMLElement).style.background = '#a3242b';
             }}
           >
             <ExternalLink size={14} strokeWidth={2} />
@@ -186,12 +185,12 @@ export default function CTA() {
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.borderColor = 'rgba(163,36,43,0.6)';
-              el.style.color = '#e0888c';
+              el.style.background = '#a3242b';
+              el.style.color = '#f9f1e4';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.borderColor = 'rgba(249,241,228,0.3)';
+              el.style.background = 'transparent';
               el.style.color = '#f9f1e4';
             }}
           >

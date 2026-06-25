@@ -224,9 +224,14 @@ export default function GroupMenu() {
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
-                  el.style.background = '#a3242b';
-                  el.style.borderColor = '#a3242b';
-                  el.style.color = '#f9f1e4';
+                  if (plan.highlight) {
+                    el.style.background = '#861c22';
+                    el.style.borderColor = '#861c22';
+                  } else {
+                    el.style.background = '#a3242b';
+                    el.style.borderColor = '#a3242b';
+                    el.style.color = '#f9f1e4';
+                  }
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLElement;
@@ -269,13 +274,13 @@ export default function GroupMenu() {
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = 'rgba(163,36,43,0.2)';
-              el.style.borderColor = 'rgba(163,36,43,0.6)';
+              el.style.background = '#a3242b';
+              el.style.color = '#f9f1e4';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;
               el.style.background = 'rgba(163,36,43,0.12)';
-              el.style.borderColor = 'rgba(163,36,43,0.4)';
+              el.style.color = '#e0888c';
             }}
           >
             <Download size={13} strokeWidth={2} />
