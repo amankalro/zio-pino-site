@@ -37,13 +37,13 @@ export default function Navbar() {
           borderBottom: scrolled ? '1px solid rgba(46,139,87, 0.12)' : '1px solid transparent',
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 md:h-32">
           {/* Logo */}
           <a href="#" aria-label="Zio Pino Italian Pizzeria — home" className="flex items-center group">
             <img
               src="/assets/logo-light.svg"
               alt="Zio Pino Italian Pizzeria"
-              className="h-[4.5rem] w-auto"
+              className="h-[4.5rem] md:h-[6.75rem] w-auto"
             />
           </a>
 
