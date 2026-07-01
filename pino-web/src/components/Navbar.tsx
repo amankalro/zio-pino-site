@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ExternalLink, CalendarDays } from 'lucide-react';
-
-const BOOKING_URL =
-  'https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg==';
+import { openReservation } from './ReservationModal';
 
 const navLinks = [
   { label: 'Menu', href: '/assets/dine-in-menu.pdf' },
@@ -74,10 +72,9 @@ export default function Navbar() {
 
           {/* CTA buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={openReservation}
               className="flex items-center gap-2 px-6 py-2.5 text-xs font-semibold tracking-widest uppercase transition-all duration-300 rounded-sm"
               style={{
                 fontFamily: "'Inter', sans-serif",
@@ -94,7 +91,7 @@ export default function Navbar() {
             >
               <CalendarDays size={12} strokeWidth={2} />
               Book a Table
-            </a>
+            </button>
             <a
               href="https://ziopinopizza.ktu.com.au/"
               target="_blank"
@@ -177,11 +174,12 @@ export default function Navbar() {
                 transition={{ delay: navLinks.length * 0.07 + 0.05 }}
                 className="flex flex-col items-center gap-4 mt-4"
               >
-                <a
-                  href={BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileOpen(false)}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileOpen(false);
+                    openReservation();
+                  }}
                   className="px-8 py-3 text-sm tracking-widest uppercase"
                   style={{
                     background: '#a3242b',
@@ -192,7 +190,7 @@ export default function Navbar() {
                   }}
                 >
                   Book a Table
-                </a>
+                </button>
                 <a
                   href="https://ziopinopizza.ktu.com.au/"
                   target="_blank"

@@ -9,6 +9,7 @@ import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import MobileStickyCTA from './components/MobileStickyCTA';
+import ReservationModal from './components/ReservationModal';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       </main>
       <Footer />
       <MobileStickyCTA />
+      <ReservationModal />
     </div>
   );
 }

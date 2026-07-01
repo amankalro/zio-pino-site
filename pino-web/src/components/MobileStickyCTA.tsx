@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Phone, CalendarDays, UtensilsCrossed } from 'lucide-react';
+import { openReservation } from './ReservationModal';
 
 const actions = [
   {
@@ -7,18 +8,21 @@ const actions = [
     icon: Phone,
     href: 'tel:+61296692675',
     primary: false,
+    reservation: false,
   },
   {
     label: 'Book a Table',
     icon: CalendarDays,
-    href: 'https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg==',
+    href: '#',
     primary: true,
+    reservation: true,
   },
   {
     label: 'Menu',
     icon: UtensilsCrossed,
     href: '/assets/dine-in-menu.pdf',
     primary: false,
+    reservation: false,
   },
 ];
 
@@ -37,12 +41,20 @@ export default function MobileStickyCTA() {
       }}
     >
       <div className="flex items-stretch h-16">
-        {actions.map(({ label, icon: Icon, href, primary }, i) => (
+        {actions.map(({ label, icon: Icon, href, primary, reservation }, i) => (
           <a
             key={label}
             href={href}
-            target={href.startsWith('tel:') ? undefined : '_blank'}
-            rel={href.startsWith('tel:') ? undefined : 'noopener noreferrer'}
+            target={href.startsWith('tel:') || reservation ? undefined : '_blank'}
+            rel={href.startsWith('tel:') || reservation ? undefined : 'noopener noreferrer'}
+            onClick={
+              reservation
+                ? (e) => {
+                    e.preventDefault();
+                    openReservation();
+                  }
+                : undefined
+            }
             className="flex-1 flex flex-col items-center justify-center gap-1 transition-all duration-200 active:scale-95"
             style={{
               background: primary ? '#a3242b' : 'transparent',

@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Phone, ExternalLink, Flame, CalendarDays } from 'lucide-react';
+import { openReservation } from './ReservationModal';
 
 export default function CTA() {
   const ref = useRef<HTMLDivElement>(null);
@@ -146,10 +147,9 @@ export default function CTA() {
             Order Online
           </a>
 
-          <a
-            href="https://www.quandoo.com.au/place/zio-pino-pizzeria-26405/menu?aid=63&rwg_token=AE37R_gTNbrX7ZtYOg0TnAsILzN3eDZPpwnDefXLdSgeF5ywmR4OMbtbzthSYacuqrKbViAVPzvTnIvWaUHY1YGH5X8MKYUXhg=="
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={openReservation}
             className="flex items-center gap-3 px-9 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300"
             style={{
               fontFamily: "'Inter', sans-serif",
@@ -171,7 +171,7 @@ export default function CTA() {
           >
             <CalendarDays size={14} strokeWidth={1.8} />
             Book a Table
-          </a>
+          </button>
 
           <a
             href="tel:+61296692675"
